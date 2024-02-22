@@ -1,14 +1,14 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Button } from "react-native";
 
-export default function Tests({ navigation }) {
-  function navigateToTest() {
-    navigation.navigate("Number Test");
+export default function Meditation({ navigation }) {
+  function navigateToInsightTimer() {
+    navigation.navigate("Insight Timer");
   }
   return (
     <View style={styles.container}>
-      <Button title="Number Test" onPress={navigateToTest} />
-      <Text>This is where the tests will go</Text>
+      <Button title="Insight Timer" onPress={navigateToInsightTimer} />
+      <Text>Different types of meditation</Text>
       <StatusBar style="auto" />
     </View>
   );

@@ -1,16 +1,15 @@
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView, StyleSheet, Text } from "react-native";
-import NavigationBar from "react-native-navigation-bar";
+import { NavigationContainer } from "@react-navigation/native";
 import AppNavigator from "./AppNavigator";
+import NavBar from "./NavBar";
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>Euthymica</Text>
-      <View>
-        <AppNavigator />
-      </View>
-      <StatusBar style="auto" />
+    <SafeAreaView style={{ flex: 1 }}>
+      <NavigationContainer>
+        <NavBar />
+      </NavigationContainer>
     </SafeAreaView>
   );
 }
